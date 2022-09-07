@@ -1,0 +1,26 @@
+@mixin btns {
+            background-color: $color;
+            height: 45px;
+            border: none;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: center;
+            padding: 12px 25px;
+            transition: all 0.3s linear;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                box-shadow: 3px 3px 15px 5px #fff;
+                transition: all 0.3s linear;
+                color: #fff;
+            }
+} 
+@mixin titleBefor {
+    &::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

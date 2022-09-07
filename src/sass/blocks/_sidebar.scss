@@ -1,0 +1,24 @@
+.sidebar {
+    position: fixed;
+    left: -107px;
+    top: 386px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    z-index: 12;
+    &__border {
+        background-color: $color;
+        height: 2px;
+        width: 70px;
+        margin-left: 15px;
+    }
+    &__icons {
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    &__text {
+        color: $color;
+    }
+}
