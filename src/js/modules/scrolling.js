@@ -1,7 +1,7 @@
- export default function scrolling() {
+ export default function scrolling(trigger, block) {
 
-    const arrow = document.querySelector('.header__arrow'),
-    header = document.querySelector('.header');
+    const arrow = document.querySelector(trigger),
+    header = document.querySelector(block);
 
     function screenDown() {
       const height = header.offsetHeight;
