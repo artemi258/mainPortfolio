@@ -1,12 +1,13 @@
 import scrolling from './modules/scrolling';
+import sidebarShow from './modules/sideBarShow';
 
-import {WOW} from 'wowjs';
+import { WOW } from 'wowjs';
 
 import '../sass/style.scss';
 
 window.addEventListener('DOMContentLoaded', () => {
+	new WOW().init();
 
-      new WOW().init();
-
-      scrolling();
-  });
+	scrolling('.header__arrow', '.header');
+	sidebarShow();
+});
