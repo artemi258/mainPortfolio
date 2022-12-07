@@ -22,9 +22,9 @@ module.exports = {
 		port: 3000,
 		open: true,
 		hot: true,
+		watchFiles: ["./dist/*"],
 		static: {
 			directory: path.resolve(__dirname, 'dist'),
-			watch: true,
 		},
 	},
 	module: {

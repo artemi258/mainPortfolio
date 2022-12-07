@@ -1,7 +1,7 @@
 export default function sidebarShow() {
 	const header = document.querySelector('.header'),
 		sidebar = document.querySelector('.sidebar'),
-		sd = '8923r';
+		sd = '';
 	console.log(sd);
 	window.addEventListener('scroll', () => {
 		if (document.documentElement.scrollTop > header.offsetHeight) {
