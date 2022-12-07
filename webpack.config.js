@@ -18,13 +18,13 @@ module.exports = {
 		filename: 'js/bundle.js',
 		clean: true,
 	},
+	cache: false,
 	devServer: {
 		port: 3000,
 		open: true,
 		hot: true,
-		watchFiles: ["./dist/*"],
 		static: {
-			directory: path.resolve(__dirname, 'dist'),
+			directory: path.join(__dirname, 'dist'),
 		},
 	},
 	module: {
