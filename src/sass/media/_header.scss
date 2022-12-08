@@ -1,5 +1,18 @@
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
 	.sidebar {
-		display: none;
+		opacity: 0;
+		transition: all 0.5s linear;
+		left: -130px;
+		top: 50%;
+	}
+}
+@media (max-width: 1200px) {
+	.header {
+		&__block-left {
+			width: 50%;
+		}
+		&__block-right {
+			width: 48%;
+		}
 	}
 }

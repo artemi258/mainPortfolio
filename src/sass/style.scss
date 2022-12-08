@@ -9,7 +9,6 @@
 @import 'blocks/portfolio';
 @import './animations.scss';
 @import 'animate.css';
-@import './media/media.scss';
 
 * {
 	font-family: 'Poppins', sans-serif;
@@ -40,3 +39,5 @@ body {
 		}
 	}
 }
+
+@import './media/media.scss';

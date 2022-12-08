@@ -1,15 +1,12 @@
 export default function sidebarShow() {
 	const header = document.querySelector('.header'),
-		sidebar = document.querySelector('.sidebar'),
-		sd = '1212';
-	console.log(sd);
+		sidebar = document.querySelector('.sidebar');
 	window.addEventListener('scroll', () => {
+		console.log(document.documentElement.scrollTop);
 		if (document.documentElement.scrollTop > header.offsetHeight) {
-			sidebar.style.display = 'block';
+			sidebar.style.opacity = '1';
 		} else {
-			console.log('kek');
-			sidebar.style.display = 'none';
+			sidebar.style.opacity = '0';
 		}
 	});
 }
-//webpack второй раз не перезагружает страницу после изменений
