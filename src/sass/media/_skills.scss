@@ -1,0 +1,7 @@
+@media (max-width: 992px) {
+	.skills {
+		&__wrapper {
+			grid-template: repeat(2, 270px) / repeat(2, 270px);
+		}
+	}
+}
