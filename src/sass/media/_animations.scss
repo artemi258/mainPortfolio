@@ -1,0 +1,13 @@
+@media (max-width: 576px) {
+	@keyframes arrow {
+		from {
+			bottom: 15px;
+		}
+		50% {
+			bottom: 7.5px;
+		}
+		to {
+			bottom: 15px;
+		}
+	}
+}

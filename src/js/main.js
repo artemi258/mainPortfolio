@@ -9,5 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	new WOW().init();
 
 	scrolling('.header__arrow', '.header');
-	sidebarShow();
+	if (document.documentElement.clientWidth < 1200) {
+		sidebarShow();
+	}
 });
